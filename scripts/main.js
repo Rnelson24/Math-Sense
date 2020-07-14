@@ -40,18 +40,6 @@ function test(){
   alert('works');
 }
 
-let quizObject = {
-  //question:
-  //Answer:
-  //A:
-  //B:
-  //C:
-  //D:
-}
-
-let addProp = (obj, propName, propValue) => {
-  obj[propName] = propValue;
-}
 
 // random number gen
 function getRandomInt(min, max) {
@@ -92,8 +80,6 @@ function shuffle(a) {
     }
     return a;
 }
-
-
 //checks for correct answers and qeues next question
 function check(){
   if(userPick == answer){
@@ -108,14 +94,23 @@ function next(){
   iterator +=1;
 }
 
-
-
-
 //Number Sense
 //Number Knowledge,
 
 function numberOrder() {
   //for (var member in quizObject) delete quizObject[member];
+  let quizObject = {
+    //question:
+    //Answer:
+    //A:
+    //B:
+    //C:
+    //D:
+  }
+
+  let addProp = (obj, propName, propValue) => {
+    obj[propName] = propValue;
+  }
   let nOString;
   num = getRandomInt(1, 10);
   answer = num+1;
@@ -137,14 +132,27 @@ function numberOrder() {
   nOString = "What number comes" + ' ' + 'after' + ' ' + num;
   addProp(quizObject,"Question", nOString);
   console.log(nOString);
+  quizArr.push(quizObject);
   //alert(quizObject.Question);
-  //for (var member in quizObject) delete quizObject[member];
+//  for (var member in quizObject) delete quizObject[member];
   //  alert(nOString);
   //  alert(ans);
   // morph(nOString, ans, ans2, ans3, ans4);
   // check();
 }
 function numberOrder2(){
+  let quizObject = {
+    //question:
+    //Answer:
+    //A:
+    //B:
+    //C:
+    //D:
+  }
+
+  let addProp = (obj, propName, propValue) => {
+    obj[propName] = propValue;
+  }
   let nOString = 'what number comes two numbers after' + ' ' + num;
   addProp(quizObject,"Question", nOString);
   tempQuestionArr.push(num + 2);
@@ -167,48 +175,52 @@ function numberOrder2(){
 }
 
 
-function smallerOrLarger(){
-  let bigOrSmall = getRandomInt(1,2);
-  num = getRandomInt(1, 10);
-  tempQuestionArr.push(getRandomInt(num, 10));
-  tempQuestionArr.push(getRandomInt(1, num);
-  clean(tempQuestionArr);
-  shuffle(tempQuestionArr);
-  if (bigOrSmall == 1){
-    let nOString = 'which number is bigger?';
-    for(let i = 0; i< tempQuestionArr.length; i++){
-      if(tempQuestionArr[i]>num){
-        answer = tempQuestionArr[i];
-      }
-    }
-
-  }else{
-    nOString = 'which number is smaller?'
-    for(let i = 0; i< tempQuestionArr.length; i++){
-      if(tempQuestionArr[i]<num){
-        answer = tempQuestionArr[i];
-  }
-}
+// function smallerOrLarger(){
+// let quizObject = {
+//   //question:
+//   //Answer:
+//   //A:
+//   //B:
+//   //C:
+//   //D:
+// }
+//
+// let addProp = (obj, propName, propValue) => {
+//   obj[propName] = propValue;
+// }
+//   let bigOrSmall = getRandomInt(1,2);
+//   num = getRandomInt(1, 10);
+//   tempQuestionArr.push(getRandomInt(num, 10));
+//   tempQuestionArr.push(getRandomInt(1, num));
+//   clean(tempQuestionArr);
+//   shuffle(tempQuestionArr);
+//   if (bigOrSmall == 1){
+//     let nOString = 'which number is bigger?';
+//     for(let i = 0; i< tempQuestionArr.length; i++){
+//       if(tempQuestionArr[i]>num){
+//         answer = tempQuestionArr[i];
+//       }
+//     }
+//
+//   }else{
+//     nOString = 'which number is smaller?'
+//     for(let i = 0; i< tempQuestionArr.length; i++){
+//       if(tempQuestionArr[i]<num){
+//         answer = tempQuestionArr[i];
+//   }
+// }
 
 //Visual Arrays function needs to be implemented
-
-
-
-
 
 function compileQuiz(){
   for(var i = 0; i<4; i++){
     numberOrder2();
-    quizArr.push(quizObject);
     numberOrder();
-    quizArr.push(quizObject);
   }
   //alert(quizArr.length);
   for(let i = 0; i<quizArr.length; i++){
     console.log(quizArr[i].Question);
     console.log(quizArr[i].A);
-
   }
 }
-
 compileQuiz();
