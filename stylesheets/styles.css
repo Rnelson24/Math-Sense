@@ -1,0 +1,79 @@
+#myProgress {
+  margin: auto;
+  width: 80%;
+  background-color: #BEBEBE;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+#myBar {
+
+  border-radius: 50px;
+  background-color: #fffa84;
+  height: 20px;
+}
+
+
+.Question{
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Century Gothic','Futura',san-serif;
+}
+.grid-container{
+max-width: 80%;
+max-height: 95%;
+margin: auto;
+height: auto;
+}
+
+.btn-grid{
+  display: flex;
+
+  justify-content: center;
+  justify-content: space-between;
+
+  margin: auto;
+
+
+
+}
+
+#btn1, #btn2, #btn3, #btn4{
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  border-radius: 25px;
+  border-color: #BEBEBE;
+}
+
+#btn1:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+#btn2:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+#btn3:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+#btn4:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+
+
+.controls{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
