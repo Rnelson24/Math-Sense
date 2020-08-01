@@ -70,6 +70,40 @@ height: auto;
   outline: none;
 }
 
+#start-btn{
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 25px;
+  border-color: #BEBEBE;
+  font-weight: bold;
+  font-family:'Century Gothic','Futura',san-serif;
+  font-size: 60px;
+}
+
+#start-btn:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+
+#grade-btn{
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 25px;
+  border-color: #BEBEBE;
+  font-weight: bold;
+  font-family:'Century Gothic','Futura',san-serif;
+  font-size: 60px;
+}
+
+#grade-btn:focus{
+  background-color: hsla(57, 100%, 90%);
+  border-color: #fffa84;
+  outline: none;
+}
+
 
 .controls{
   display: flex;
